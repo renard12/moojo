@@ -1,0 +1,1 @@
+export { OfferFeedDetails } from './OfferFeedDetails';

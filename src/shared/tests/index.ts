@@ -1,0 +1,1 @@
+export { mockDimensions } from './mockDimentions';

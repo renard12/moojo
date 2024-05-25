@@ -1,0 +1,1 @@
+export { OfferFeed } from './OfferFeed';
