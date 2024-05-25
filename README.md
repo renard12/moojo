@@ -46,34 +46,57 @@ If everything is set up _correctly_, you should see your new app running in your
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+# Explanation of the chosen architecture pattern and state management approach.
 
-Now that you have successfully run the app, let's modify it.
+For this project I use redux like a state management. It is a small project with a not huge state tree. Benefits for this state management are the next one:
+1. Predictable State Management
+2. Middleware for Asynchronous Logic
+3. Maintainable and Scalable Code
+4. Flexible Architecture
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+For this app, I combine patterns.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+1. Component-Based Architecture: At the core, use a component-based architecture to structure  UI.
+2. Clean Architecture Principles: Apply clean architecture principles to separate concerns and organize code into layers (Presentation, Domain, Data).
+3. Component-Based Architecture: the app is divided into reusable, self-contained components. Each component manages its own state and UI logic.
 
-## Congratulations! :tada:
+# Dependency list 
 
-You've successfully run and modified your React Native App. :partying_face:
+@react-native-async-storage/async-storage: A simple, asynchronous, persistent, key-value storage system for React Native applications. It’s used for storing data locally on the device.
 
-### Now what?
+@react-native-community/hooks: A collection of useful hooks for React Native, like useKeyboard, useAppState, etc.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+@react-navigation/native: The core library for React Navigation, providing the essential components and utilities to manage navigation in a React Native app.
 
-# Troubleshooting
+@react-navigation/stack: Provides stack-based navigation for React Navigation.
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+@reduxjs/toolkit: Official, recommended way to write Redux logic. It helps with writing Redux store setup, reducers, and actions more efficiently.
 
-# Learn More
+react-native-gesture-handler: A library for handling gestures in React Native apps.
 
-To learn more about React Native, take a look at the following resources:
+react-native-paper: A library for creating smooth animations and gesture interactions in React Native.
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+react-native-safe-area-context: Provides a way to handle safe area insets (like the notch and home indicator) for React Native apps.
+
+react-native-screens: A library that optimizes screen rendering and performance by using native navigation primitives.
+
+react-native-storage: Provides a simple, persistent, and async key-value storage system for React Native apps
+
+react-native-toast-message: A library to display customizable toast messages in React Native apps.
+
+react-navigation: A navigation library for React Native
+
+react-redux: Official React bindings for Redux, enabling your React components to interact with the Redux store.
+
+redux-persist: A library to persist and rehydrate Redux state.
+
+
+
+
+
+
+
+
+
+
+
